@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>InteTools</title>
+	<title>WordPress</title>
 
 	<meta name="description" content="InteTools">
 	<meta name="author" content="Sooyoos">
@@ -94,7 +94,7 @@
 			</div>
 		</section>
 		<!-- ########################################################################################## -->                   
-		<section>
+		<section id="keynumbers">
 			<section id="wordpress-keynumbers" >
 				<h2>WordPress en quelques chiffres</h2>
 			</section>
@@ -113,13 +113,13 @@
 			</section>
 		</section>
 		<!-- ########################################################################################## -->
-		<section>
+		<section id="success">
 			<section id="wordpress-success">
 				<h3>Pourquoi ce succès ?</h3>
 			</section>
 
 			<section id="wordpress-concurrents">
-				<h3>Les concurrents</h3>
+				<h3>Les (précédents) concurrents</h3>
 				<div>
 					<ul>
 						<li>SPIP</li>
@@ -130,57 +130,150 @@
 				</div>
 			</section>
 
-			<section id="wordpress-evolutions">
+			<section id="wordpress-history">
+				<h3>Rapide historique</h3>
+				<a target="_blank" href="https://codex.wordpress.org/History">https://codex.wordpress.org/History</a>
 				<div>
+					<h3>Dates clés</h3>
 					<ul>
-						<li>Color picker</li>
-						<li>Slice</li>
-						<li>Export</li>
+						<li>2001/2003: un fork de B2</li>
+						<li>2004: Introduction des plugins</li>
+						<li>2005: Introduction du theming (*template hierarchy)</li>
+						<li>2010: Custom Post Types, Taxonomies &amp; Multisite</li>
+						<li>2016: REST API</li>
 					</ul>
 				</div>
-				<div style="float: left; width: 50%;">
-					<img src="images/code-panel.png"/>
+			</section>
+
+		</section>
+
+		<section id="theming">
+			
+			<section id="wordpress-theming">
+				<h3>WordPress theming</h3>
+				<div>
+					<ul>
+						<li>Theme from-scratch: 3 fichiers pour démarrer (index.php, style.css &amp; functions.php)</li>
+						<li><em>Template Hierarchy</em> &amp; <em>Conditional Tags</em></li>
+						<li><em>Child Theme*</em></li>
+						<li>La nouvelle tendance: <em>Pages Builder*</em></li>
+					</ul>
+				</div>
+				<div id="wordpress-template-hierarchy" >
+					<img style="display: inline-block; margin: 0 auto;" src="https://developer.wordpress.org/files/2014/10/template-hierarchy.png"/>
+				</div>
+			</section>
+			
+			<section id="wordpress-theme-development">
+				<h3><em>REX</em> (Retour d'expérience)</h3>
+				<div>
+					<ul>
+						<li>Laboratoires IPRAD</li>
+						<li>ATOS</li>
+						<li>les 150 millions de sites développés pour des Agences, des PME, des Artistes ou des Annonceurs
+					</ul>
 				</div>
 			</section>
 
-			<section id="avocode-5">
-				<h3>Notes</h3>
-				<img src="images/note.png" style="width: 510px;" />
+		</section>
+
+		<section id="plugins">
+			
+			<section id="wordpress-plugins-intro">
+				<h3>"Pour ça, on installera un plugin..."</h3>
+				<div style="width: 60%;margin: 0 auto;">
+					<img src="https://media.giphy.com/media/3oriOaivTEk4PotVEQ/giphy.gif"/>
+				</div>
 			</section>
 
-			<section id="avocode-6">
-				<h3>Version control</h3>
-				<img src="images/version-control.png" style="width: 550px;" />
+			<section id="wordpress-choose-plugins">
+				<h3>Comment choisir un plugin ?</h3>
+				<div>
+					<ul>
+						<li>Vérifier les dernières mises à jour (et leurs fréquences)</li>
+						<li>Vérifier l'auteur (ses contributions, sa présence dans les FAQ)</li>
+						<li>Se faire un avis sur sa pérennité: 
+							<ul>
+								<li>Compatiblité avec les version de WP</li>
+								<li>multilingue, Users roles &amp; capabilities</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<p><strong>Quick ProTips:</strong> vérifier l'existence d'un fonction tierce avant de l'utiliser dans son thème</p>
+					<pre>
+						<?php
+							if(function_exists('rdfa_breadcrumb')){
+								rdfa_breadcrumb();
+							}
+						?>
+					</pre>
+				</div>
 			</section>
 
-			<section id="avocode-7">
-				<h3>Features</h3>
-				<img style="vertical-align: middle;" src="images/cloud.png"/>
-				<img style="vertical-align: middle; margin: 0 20px;" src="images/slack.png"/>
-				<img style="vertical-align: middle;" src="images/offline.png"/>
+			<section id="wordpress-plugins-premium">
+				<h3>Quid des plugins premium ?</h3>
+				<div>
+					<ul>
+						<li>Un thème ou plugin premium n'est synonyme ni de qualité, ni d'efficacité</li>
+						<li>Exemple des Pages Builder</li>
+					</ul>
+				</div>
 			</section>
 
-			<section id="avocode-8">
-				<h3>Rien n'est parfait</h3>
-				<img style="height: 220px; display: inline-block; vertical-align: middle;" src="https://media.giphy.com/media/6XFmhISI66Mp2/giphy.gif"/>
-				<img style="height: 220px; display: inline-block; vertical-align: middle;" src="images/fail-export.jpg"/>
-			</section>
+		</section>
 
-			<section id="avocode-9">
-				<h3>En bref</h3>
+		<section id="security">
+			<section id="wordpress-security">
+				<h3>La sécurité, un enjeu majeur (comme tout le monde)</h3>
+				<div>
+					<img src="https://media.giphy.com/media/3o6Zt6WcUqZxLGQU12/giphy.gif">
+				</div>
+			</section>
+			<section id="wordpress-security-stats">
+				<div>
+					<img src="https://www.wordfence.com/wp-content/uploads/2016/03/hacked_website_how_compromised.png">
+				</div>
+			</section>
+			<section id="wordpress-security-stats">
+				<h3>Que faire ?</h3>
 				<ul>
-					<li>Très bon outil pour centraliser</li>
-					<li>Solution payante...</li>
-					<li>Invision ?</li>
+					<li>Restaurer une sauvegarde</li>
+					<li><em>Fresh-install</em></li>
+					<li>S'appuyer sur le versionning (diff)</li>
+					<li>S'appuyer sur un plugin dédié à la sécurité (Wordfence, Sucuri)</li>
+				</ul>
+			</section>
+		</section>
+		<section id="performances">
+			<section id="wordpress-security">
+				<h3>Les performances, le point qui divise</h3>
+				<div>
+					<ul>
+						<li>WordPress seul fautif ?</li>
+						<li>Ressources liées au thème et aux plugins</li>
+						<li>Configuration Serveur</li>
+					</ul>
+				</div>
+			</section>
+			<section id="wordpress-security-stats">
+				<h3>Que faire ?</h3>
+				<ul>
+					<li>Audit de performances de l'applicatif (<em>P3 Profiler</em>)</li>
+					<li>Optimisations serveur (Apache vs. NGINX)</li>
 				</ul>
 			</section>
 		</section>
 		<!-- ########################################################################################## -->
 		<section id="conclusion">
-			<h2>Conclusion #punchline</h2>
+			<h2>Conclusion</h2>
 			<p>
-				Prendre du temps pour trouver un outil afin de gagner du temps...
+				On ne dit pas "j'aime pas", il faut goûter d'abord!
 			</p>
+			<div>
+				<img src="https://media.giphy.com/media/TdmTcdoN3egaQ/giphy.gif">
+			</div>
 		</section>
 		<!-- ########################################################################################## -->
 	</div><!-- ./slides -->
